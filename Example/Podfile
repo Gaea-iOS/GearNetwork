@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GearNetwork_Example' do
+  pod 'GearNetwork', :path => '../'
+
+  target 'GearNetwork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
