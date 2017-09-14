@@ -52,10 +52,15 @@ extension Modelable where Self: UnboxableEnum {
 //    }
 //}
 
-extension Date: Modelable {
-    public init(value: Any) throws {
-        let intValue = try Int(value: value)
-        self = Date(timeIntervalSince1970: TimeInterval(intValue))
+extension Date: UnboxableRawType {
+    
+    public static func transform(unboxedNumber: NSNumber) -> Date? {
+        return Date(timeIntervalSince1970: unboxedNumber.doubleValue)
+    }
+    
+    public static func transform(unboxedString: String) -> Date? {
+        guard let timestamp = TimeInterval(unboxedString) else { return nil }
+        return Date(timeIntervalSince1970: timestamp)
     }
 }
 
@@ -77,4 +82,5 @@ extension String: Modelable {}
 
 extension URL: Modelable {}
 
+extension Date: Modelable {}
 
