@@ -52,6 +52,12 @@ extension Modelable where Self: UnboxableEnum {
 //    }
 //}
 
+extension Date: Modelable {
+    public init(value: Any) throws {
+        let intValue = try Int(value: value)
+        self = Date(timeIntervalSince1970: TimeInterval(intValue))
+    }
+}
 
 extension Bool: Modelable {}
 
