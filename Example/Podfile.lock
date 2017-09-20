@@ -1,14 +1,10 @@
 PODS:
   - Alamofire (4.5.1)
-  - GearNetwork (0.3.0):
-    - RxAlamofire (= 3.0.3)
+  - GearNetwork (0.4.0):
+    - Alamofire (= 4.5.1)
+    - RxSwift (= 4.0.0-beta.0)
     - Unbox
-  - RxAlamofire (3.0.3):
-    - RxAlamofire/Core (= 3.0.3)
-  - RxAlamofire/Core (3.0.3):
-    - Alamofire (~> 4.0)
-    - RxSwift (~> 3.0)
-  - RxSwift (3.6.1)
+  - RxSwift (4.0.0-beta.0)
   - Unbox (2.5.0)
 
 DEPENDENCIES:
@@ -20,9 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  GearNetwork: c7839420ae0ac545fd69517173dbe5ff1f9001d1
-  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
-  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  GearNetwork: 81855aae8b488f90c6660c62fd35d52532349206
+  RxSwift: e0899fae37065c16db976cc5e3c957e4e388869c
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
 PODFILE CHECKSUM: 78f8e501deefbc6a524b34b222e069b4036ae9e0

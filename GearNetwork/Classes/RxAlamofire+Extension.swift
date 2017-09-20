@@ -7,7 +7,6 @@
 //
 
 import Alamofire
-import RxAlamofire
 import RxSwift
 
 public func json(urlRequest: URLRequestConvertible)

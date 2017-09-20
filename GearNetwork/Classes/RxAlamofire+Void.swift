@@ -6,7 +6,6 @@
 //  Copyright © 2017年 王小涛. All rights reserved.
 //
 
-import RxAlamofire
 import Alamofire
 import RxSwift
 
