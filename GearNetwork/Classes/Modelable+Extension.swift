@@ -51,15 +51,16 @@ extension Modelable {
     
     static func makeModels<T: Modelable>(fromValue value: Any, atKey key: String? = nil, allowInvalidElements: Bool = false) throws -> [String: T] {
         guard let values = try valueToModel(fromValue: value, atKey: key) as? [String: Any] else {return [:]}
-        let models: [String: T] = try values.reduce([:], {
-            var result = $0.0
+        
+        let models: [String: T] = try values.reduce([:]) { initial, model in
+            var result = initial
             if !allowInvalidElements {
-                result[$0.1.key] = try T(value: $0.1.value)
+                result[model.key] = try T(value: model.value)
             }else {
-                result[$0.1.key] = try? T(value: $0.1.value)
+                result[model.key] = try? T(value: model.value)
             }
             return result
-        })
+        }
         return models
     }
 }
