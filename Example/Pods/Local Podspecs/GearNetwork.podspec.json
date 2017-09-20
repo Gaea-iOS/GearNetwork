@@ -1,9 +1,9 @@
 {
   "name": "GearNetwork",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "summary": "A short description of GearNetwork.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/wangxiaotao/GearNetwork",
+  "homepage": "https://github.com/Gear-iOS/GearNetwork",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "wangxiaotao": "445242970@qq.com"
   },
   "source": {
-    "git": "https://github.com/wangxiaotao/GearNetwork.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Gear-iOS/GearNetwork.git",
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,7 +21,7 @@
   "source_files": "GearNetwork/Classes/**/*",
   "dependencies": {
     "RxAlamofire": [
-
+      "3.0.3"
     ],
     "Unbox": [
 
